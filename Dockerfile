@@ -1,4 +1,4 @@
 FROM openjdk:8
 EXPOSE 8080
-ADD target/spring-boot-microservice-forex-service-0.0.1.jar spring-boot-microservice-forex-service-0.0.1.jar
-ENTRYPOINT ["java","-jar","/spring-boot-microservice-forex-service-0.0.1.jar"]
+ADD /home/target.jar /home/target.jar
+ENTRYPOINT ["java","-jar","/home/target.jar"]
