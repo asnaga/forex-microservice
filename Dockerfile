@@ -1,4 +1,4 @@
 FROM openjdk:8
 EXPOSE 8000
-COPY home/target/* .
-CMD ["java","-jar","/docker-spring-boot.jar"]
+COPY home/target/*.jar /opt/demo.jar
+CMD ["java","-jar","/opt/demo.jar"]
