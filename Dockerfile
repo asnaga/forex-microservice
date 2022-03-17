@@ -1,4 +1,4 @@
 FROM openjdk:8
 EXPOSE 8080
-ADD /home/target.jar /home/target.jar
-ENTRYPOINT ["java","-jar","/home/target.jar"]
+ADD target/docker-spring-boot.jar docker-spring-boot.jar
+ENTRYPOINT ["java","-jar","docker-spring-boot.jar"]
