@@ -1,5 +1,5 @@
 FROM openjdk:8
 EXPOSE 8000
 COPY */**.jar .
-RUN chmod 777 docker-spring-boot.jar
+RUN chmod 777 spring-boot-microservice-forex-service-0.0.1-SNAPSHOT.jar
 CMD ["java","-jar","/docker-spring-boot.jar"]
